@@ -2,8 +2,8 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross
 
 NAME="mingw64-x86_64-expat"
-VERSION=2.1.1
-RELEASE=2
+VERSION=2.2.0
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Expat library for Win64 toolchain"
 DESCRIPTION="This package does NOT contain cygwin binaries.  Instead, it
@@ -13,7 +13,6 @@ mingw64-x86_64-gcc cross compiler, and installs into the
 HOMEPAGE="http://expat.sourceforge.net/"
 SRC_URI="mirror://sourceforge/expat/expat-${VERSION}.tar.bz2"
 SRC_DIR="expat-${VERSION}"
-PATCH_URI="https://bugzilla.redhat.com/attachment.cgi?id=1159904#/expat-CVE-2016-0718.patch"
 
 src_compile() {
 	cd ${S}
